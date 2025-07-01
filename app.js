@@ -1,8 +1,8 @@
 const express = require("express");
+const app = express();
 require("dotenv").config({
     path: ".env"
 })
-const app = express();
 const jwt = require("jsonwebtoken");
 const userModel = require("./models/user");
 const postModel = require("./models/post");
@@ -12,10 +12,10 @@ const upload = require("./config/multerconfig")
 const path = require("path");
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname,"public")));
-app.set("views", path.join(__dirname, "views"));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
