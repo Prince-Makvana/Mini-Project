@@ -4,6 +4,8 @@ require("dotenv").config({
     path: ".env",
     silent: true
 })
+const connectDB = require('./db');
+connectDB();
 const jwt = require("jsonwebtoken");
 const userModel = require("./models/user");
 const postModel = require("./models/post");

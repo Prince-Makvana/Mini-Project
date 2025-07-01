@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGO_URL);
-
 const userSchema = mongoose.Schema({
     username: String,
     name: String,
