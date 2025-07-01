@@ -1,12 +1,12 @@
 {
     "routes":[
         {
-            "src":"/",
-            "dest": "/"
+            "src":"./app.js",
+            "dest": "/app.js"
         },
         {
-            "src":"/",
-            "dest": "/"
+            "src":"./app.js",
+            "dest": "/app.js"
         }
     ]
 }
