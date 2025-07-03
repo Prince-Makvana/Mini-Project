@@ -8,13 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-zinc-900">
-    <div class="w-full h-full p-20 text-white">
+    <div class="w-full h-full lg:p-20 md:p-10 p-5 text-white">
         <div class="flex justify-between mb-5">
             <a class="text-zinc-900 px-5 py-2 rounded-lg bg-zinc-500" href="/profile">Go Back</a>
         </div>
         <h1 class="text-3xl mb-10">Upload Profile Picture</h1>
         <form action="/upload" method="post" enctype="multipart/form-data">
-             <label class="block relative cursor-pointer p-2 w-1/9 rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500">
+             <label class="block relative cursor-pointer p-2 lg:w-1/7 md:w-1/5 w-1/2 rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500">
                   <span>Upload a file</span>
                   <input  name="image" type="file" class="sr-only" />
                 </label>
